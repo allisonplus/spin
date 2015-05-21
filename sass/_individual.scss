@@ -1,3 +1,11 @@
+// Single Post Container
+.hero-content, .page-content, .comments {
+  width:900px;
+  margin:0 auto;
+} 
+
+// Single Post Hero Image
+
 .hero {
   position:relative;
   width:100%;
@@ -21,6 +29,8 @@
   background-position: 50%;
 }
 
+// Single Post Hero Header Data
+
 h2.hero-title {
   font-size:55px;
   margin:0;
@@ -36,8 +46,6 @@ h2.hero-title {
 
 .hero-content {
   position:relative;
-  width:900px;
-  margin:0 auto;
   text-transform:uppercase;
   top:16%;
 }
@@ -62,7 +70,14 @@ h2.hero-title {
   }
 }
 
-.page-content {
-  width:900px;
-  margin:0 auto;
+//Single Post Previous / Next Navigation
+
+.post-navigation {
+  margin-top:5%;
+}
+
+.post-navigation .nav-previous, .post-navigation .nav-next {
+  width:50%;
+  float:left;
+  height:120px;
 }

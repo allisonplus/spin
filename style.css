@@ -332,6 +332,10 @@ ul.social {
 .slideout {
   display: none; }
 
+.hero-content, .page-content, .comments {
+  width: 900px;
+  margin: 0 auto; }
+
 .hero {
   position: relative;
   width: 100%;
@@ -364,8 +368,6 @@ h2.hero-title {
 
 .hero-content {
   position: relative;
-  width: 900px;
-  margin: 0 auto;
   text-transform: uppercase;
   top: 16%; }
 
@@ -385,9 +387,13 @@ h2.hero-title {
   .hero-meta span.entry-date {
     color: #FFF; }
 
-.page-content {
-  width: 900px;
-  margin: 0 auto; }
+.post-navigation {
+  margin-top: 5%; }
+
+.post-navigation .nav-previous, .post-navigation .nav-next {
+  width: 50%;
+  float: left;
+  height: 120px; }
 
 /* Global Classes / Wordpress Specific */
 .aligncenter {
