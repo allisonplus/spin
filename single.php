@@ -6,25 +6,39 @@
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+          <?php 
+            $thumb_id = get_post_thumbnail_id();
+            $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'blog-pull', true);
+            $thumb_url = $thumb_url_array[0];
+          ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
 
-          <div class="entry-meta">
-            <?php hackeryou_posted_on(); ?>
-          </div><!-- .entry-meta -->
+          <div class="hero" id="hero">
+            <div class="hero-image clearfix" style="background-image:url(<?= $thumb_url ?>)">
+            </div> <!--/hero-image-->
 
-          <div class="entry-content">
-            <?php the_content(); ?>
-            <?php wp_link_pages(array(
-              'before' => '<div class="page-link"> Pages: ',
-              'after' => '</div>'
-            )); ?>
-          </div><!-- .entry-content -->
+            <a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>
+            
+            <div class="hero-content">
+              <div class="hero-meta">
+                <span class="entry-cat" id="entry-cat">
+                  <?php 
+                  $category = get_the_category(); 
+                  if($category[0]){
+                  echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+                  } ?>
+                </span>
+                <span class="entry-date"><i class="fa fa-clock-o"></i><?php the_date('F jS, Y', '<p>', '</p>'); ?></span>
 
-          <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
-          </div><!-- .entry-utility -->
+              </div> <!--/.meta-data-->
+              <h2 class="hero-title">
+                <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+                  <?php the_title(); ?>
+                </a>
+              </h2>
+            </div> <!--/.hero-content-->
+          </div> <!--/.hero-->
+
         </div><!-- #post-## -->
 
         <div id="nav-below" class="navigation">
@@ -37,8 +51,6 @@
       <?php endwhile; // end of the loop. ?>
 
     </div> <!-- /.content -->
-
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
