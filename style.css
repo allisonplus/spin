@@ -338,7 +338,7 @@ ul.social {
   height: 100px;
   height: -webkit-calc(100vh*0.55);
   height: calc(100vh*0.55);
-  margin-bottom: 90px;
+  margin-bottom: 35px;
   background-color: #222; }
 
 .hero-image {
@@ -379,10 +379,15 @@ h2.hero-title {
   webkit-transform: skew(-20deg); }
 
 .hero-meta {
+  margin-left: 10px;
   margin-bottom: 15px;
   transform: skew(-20deg); }
   .hero-meta span.entry-date {
     color: #FFF; }
+
+.page-content {
+  width: 900px;
+  margin: 0 auto; }
 
 /* Global Classes / Wordpress Specific */
 .aligncenter {
@@ -456,6 +461,9 @@ dd {
   margin-left: 10px; }
 
 /*lists*/
+ul li, ol li {
+  padding: 3px; }
+
 /*PRE*/
 pre {
   background: #F7F7F7;
@@ -463,9 +471,9 @@ pre {
   border-radius: 4px;
   border: 1px solid #ccc; }
 
-/* =============================================================================
+/* ===============================================
                    Sidebar
-   ========================================================================== */
+   =========================================== */
 .sidebar {
   width: 30%;
   float: left; }
@@ -658,3 +666,11 @@ p.form-allowed-tags, .nocomments {
 
 #respond p, #comments-list ul #respond {
   margin: 0; }
+
+#respond {
+  width: 100%; }
+
+.comment-body {
+  width: 100%;
+  background-color: transparent;
+  height: 100%; }

@@ -84,9 +84,9 @@ dd {
 }
 
 /*lists*/
-// ul li,ol li {
-//   padding:3px;
-// }
+ul li,ol li {
+  padding:3px;
+}
 
 /*PRE*/
 
@@ -97,9 +97,9 @@ pre {
   border:1px solid #ccc;
 }
 
-/* =============================================================================
+/* ===============================================
                    Sidebar
-   ========================================================================== */
+   =========================================== */
 .sidebar {
   width:30%;
   float:left;
@@ -253,3 +253,13 @@ p.form-allowed-tags, .nocomments { display:none; }
 }
 .comment-meta a:active, .comment-meta a:hover, .reply a:hover, a.comment-edit-link:hover { color:#ff4b33; }
 #respond p, #comments-list ul #respond { margin:0; }
+
+#respond {
+  width:100%;
+}
+
+.comment-body {
+  width:100%;
+  background-color:transparent;
+  height:100%;
+}

@@ -38,8 +38,11 @@
               </h2>
             </div> <!--/.hero-content-->
           </div> <!--/.hero-->
-
         </div><!-- #post-## -->
+
+        <div class="page-content">
+          <?php the_content(); ?>
+
 
         <div id="nav-below" class="navigation">
           <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
@@ -47,6 +50,8 @@
         </div><!-- #nav-below -->
 
         <?php comments_template( '', true ); ?>
+
+        </div> <!--/.page-content-->
 
       <?php endwhile; // end of the loop. ?>
 

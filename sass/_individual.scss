@@ -4,7 +4,7 @@
   height:100px;
   height: -webkit-calc(100vh*0.55);
   height: calc(100vh*0.55);
-  margin-bottom:90px;
+  margin-bottom:35px;
   background-color:#222;
 }
 
@@ -53,10 +53,16 @@ h2.hero-title {
 }
 
 .hero-meta {
+  margin-left:10px;
   margin-bottom:15px;
   transform:skew(-20deg);
 
   span.entry-date {
     color:#FFF;
   }
+}
+
+.page-content {
+  width:900px;
+  margin:0 auto;
 }
