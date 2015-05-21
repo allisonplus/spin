@@ -1,0 +1,13 @@
+$primary:#000; 
+$secondary:#54496C;
+$tertiary:teal;
+
+h1, h2, p, a {
+	font-family: 'Droid Serif', serif;
+	color:$primary;
+}
+
+.container {
+  max-width:1600px;
+  margin:0 auto;
+}
