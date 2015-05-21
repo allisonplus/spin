@@ -16,9 +16,15 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
+		<?php 
+			$thumb_id = get_post_thumbnail_id();
+			$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'highlighted', true);
+			$thumb_url = $thumb_url_array[0];
+		?>
+
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<div class="photo-highlighted"><?php the_post_thumbnail('highlighted'); ?>
+			<div class="clearfix photo-highlighted" style="background-image:url(<?= $thumb_url ?>)">
 			</div> <!--/photo-highlighted-->
 
 			<a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>

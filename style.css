@@ -204,17 +204,18 @@ article {
   background-color: #222;
   border: 1px solid #FFF; }
 
-article:hover {
-  background: #111; }
-
 .photo-highlighted {
-  opacity: .4;
-  max-width: 100%; }
-
-.photo-highlighted img {
+  opacity: .6;
+  width: 800px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%; }
+  background-position: 50%;
+  max-width: 100%;
+  height: 100%; }
+
+.type-post:hover .photo-highlighted {
+  opacity: .4;
+  transition: opacity .6s; }
 
 .post-link {
   position: absolute;
