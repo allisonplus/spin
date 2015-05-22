@@ -1,5 +1,5 @@
 // Single Post Container
-.hero-content, .page-content, .comments {
+.hero-content, .page-content, .comments, ul.tags {
   width:900px;
   margin:0 auto;
 } 
@@ -70,14 +70,51 @@ h2.hero-title {
   }
 }
 
+// Single Post Tags List
+
+ul.tags {
+  padding:0;
+  margin-top:2%;
+
+  li {
+    display:inline-block;
+
+    a {
+      background-color:#f3f3f3;
+      color:#505050;
+      text-transform:uppercase;
+      padding:8px 12px;
+    }
+  }
+}
+
 //Single Post Previous / Next Navigation
 
 .post-navigation {
   margin-top:5%;
 }
 
+.post-navigation a {
+  color:#FFF;
+  font-family:'Droid Sans', sans-serif;
+}
+
 .post-navigation .nav-previous, .post-navigation .nav-next {
   width:50%;
+  background-color:#222;
+  color:#FFF;
   float:left;
-  height:120px;
+  height:80px;
+}
+
+.nav-previous, .nav-next {
+  padding-top:2%;
+}
+
+.nav-previous a {
+  padding-left:20%;
+}
+
+.nav-next a {
+  padding-right:20%;
 }

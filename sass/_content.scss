@@ -35,11 +35,12 @@ article {
   display:inline-block;
   position:absolute;
   top:30%;
-  left:25px;
+  left:5%;
   text-transform:uppercase;
   font-size:35px;
   line-height:35px;
   margin:0 8px 0 0;
+  // font-family:'Droid Sans', sans-serif;
 }
 
 h2.entry-title {
@@ -91,6 +92,7 @@ span.entry-cat a {
 }
 
 span.entry-cat a, span.entry-date p {
+  font-family:'Droid Sans', sans-serif;
   display:inline-block;
   transform:skew(20deg);
   webkit-transform:skew(20deg);

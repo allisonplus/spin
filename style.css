@@ -228,7 +228,7 @@ article {
   display: inline-block;
   position: absolute;
   top: 30%;
-  left: 25px;
+  left: 5%;
   text-transform: uppercase;
   font-size: 35px;
   line-height: 35px;
@@ -277,6 +277,7 @@ span.entry-cat a {
   margin-left: 8px; }
 
 span.entry-cat a, span.entry-date p {
+  font-family: 'Droid Sans', sans-serif;
   display: inline-block;
   transform: skew(20deg);
   webkit-transform: skew(20deg); }
@@ -332,7 +333,7 @@ ul.social {
 .slideout {
   display: none; }
 
-.hero-content, .page-content, .comments {
+.hero-content, .page-content, .comments, ul.tags {
   width: 900px;
   margin: 0 auto; }
 
@@ -387,13 +388,39 @@ h2.hero-title {
   .hero-meta span.entry-date {
     color: #FFF; }
 
+ul.tags {
+  padding: 0;
+  margin-top: 2%; }
+  ul.tags li {
+    display: inline-block; }
+    ul.tags li a {
+      background-color: #f3f3f3;
+      color: #505050;
+      text-transform: uppercase;
+      padding: 8px 12px; }
+
 .post-navigation {
   margin-top: 5%; }
 
+.post-navigation a {
+  color: #FFF;
+  font-family: 'Droid Sans', sans-serif; }
+
 .post-navigation .nav-previous, .post-navigation .nav-next {
   width: 50%;
+  background-color: #222;
+  color: #FFF;
   float: left;
-  height: 120px; }
+  height: 80px; }
+
+.nav-previous, .nav-next {
+  padding-top: 2%; }
+
+.nav-previous a {
+  padding-left: 20%; }
+
+.nav-next a {
+  padding-right: 20%; }
 
 /* Global Classes / Wordpress Specific */
 .aligncenter {
