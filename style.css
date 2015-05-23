@@ -458,6 +458,16 @@ input#submit.submit:hover {
   background: teal;
   transition: background .2s; }
 
+.four-oh-four {
+  margin: 2.5% auto;
+  max-width: 900px; }
+  .four-oh-four h1 {
+    margin: 0 0 6px 0; }
+  .four-oh-four h2 {
+    margin: 0; }
+  .four-oh-four h3 {
+    font-weight: 400; }
+
 /* Global Classes / Wordpress Specific */
 .aligncenter {
   text-align: center;
