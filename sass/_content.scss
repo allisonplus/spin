@@ -153,10 +153,11 @@ ul.social {
       display:block;
       width:40px;
       height:40px;
-      color: #505050;
+      color:#505050;
 
       &:hover {
         color:$tertiary;
+        // transform:color 4s;
       }
     }
   }

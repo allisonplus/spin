@@ -56,7 +56,9 @@
         </div><!--/.post-navigation -->
 
         <div class="comments"> 
-          <?php comments_template( '', true ); ?>
+          <?php comment_form(); ?>
+
+          <?php get_comments( $args ); ?>
         </div>
 
       <?php endwhile; // end of the loop. ?>

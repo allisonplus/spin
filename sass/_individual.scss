@@ -9,9 +9,9 @@
 .hero {
   position:relative;
   width:100%;
-  height:100px;
-  height: -webkit-calc(100vh*0.55);
-  height: calc(100vh*0.55);
+  height:300px;
+  height: -webkit-calc(100vh*0.35);
+  height: calc(100vh*0.35);
   margin-bottom:35px;
   background-color:#222;
 }
@@ -27,6 +27,11 @@
   background-size:cover;
   background-repeat:no-repeat;
   background-position: 50%;
+}
+
+.type-post:hover .hero-image {
+  opacity:.4;
+  transition:opacity .6s;
 }
 
 // Single Post Hero Header Data
@@ -117,4 +122,22 @@ ul.tags {
 
 .nav-next a {
   padding-right:20%;
+}
+
+//Single Post Comments
+
+input#submit.submit {
+  background:$secondary;
+  color:#FFF;
+  margin-top:3%;
+  padding:10px 15px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-family:'Droid Sans', sans-serif;
+}
+
+input#submit.submit:hover {
+  background:$tertiary;
+  transition: background .5s;
 }
