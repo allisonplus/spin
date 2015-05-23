@@ -7,7 +7,7 @@ Author: Allison Tarr
 Author URI: http://allisontarr.com
 */
 h1, h2, p, a {
-  font-family: 'Droid Serif', serif;
+  font-family: 'Droid Sans', sans-serif;
   color: #000; }
 
 .container {
@@ -15,7 +15,7 @@ h1, h2, p, a {
   margin: 0 auto; }
 
 h1, h2, p, a {
-  font-family: 'Droid Serif', serif;
+  font-family: 'Droid Sans', sans-serif;
   color: #000; }
 
 .container {
@@ -328,7 +328,8 @@ ul.social {
       height: 40px;
       color: #505050; }
       ul.social li a:hover {
-        color: teal; }
+        color: teal;
+        transition: color .6s; }
 
 .slideout {
   display: none; }
@@ -341,8 +342,8 @@ ul.social {
   position: relative;
   width: 100%;
   height: 300px;
-  height: -webkit-calc(100vh*0.35);
-  height: calc(100vh*0.35);
+  height: -webkit-calc(100vh*0.45);
+  height: calc(100vh*0.45);
   margin-bottom: 35px;
   background-color: #222; }
 
@@ -365,7 +366,6 @@ h2.hero-title {
   font-size: 55px;
   margin: 0; }
   h2.hero-title a {
-    font-family: 'Droid Sans', sans-serif;
     color: #FFF;
     line-height: 45px;
     font-weight: 400;
@@ -392,6 +392,12 @@ h2.hero-title {
   .hero-meta span.entry-date {
     color: #FFF; }
 
+.page-content h3 {
+  font-size: 24px; }
+
+.page-content {
+  font-size: 20px; }
+
 ul.tags {
   padding: 0;
   margin-top: 2%; }
@@ -404,30 +410,42 @@ ul.tags {
       padding: 8px 12px; }
 
 .post-navigation {
-  margin-top: 5%; }
+  margin-top: 3%; }
 
 .post-navigation a {
-  color: #FFF;
-  font-family: 'Droid Sans', sans-serif; }
-
-.post-navigation .nav-previous, .post-navigation .nav-next {
-  width: 50%;
-  background-color: #222;
-  color: #FFF;
-  float: left;
-  height: 80px; }
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4% 6%; }
 
 .nav-previous, .nav-next {
-  padding-top: 2%; }
+  float: left;
+  width: 50%;
+  height: 80px;
+  margin: 0;
+  background-color: #f8f8f8;
+  border: 1px solid #FFF; }
 
-.nav-previous a {
-  padding-left: 20%; }
+.nav-previous a, .nav-next a {
+  color: #505050;
+  text-transform: uppercase;
+  letter-spacing: 1.2px; }
 
-.nav-next a {
-  padding-right: 20%; }
+.nav-previous a:hover, .nav-next a:hover {
+  color: #FFF; }
+
+.nav-previous:hover, .nav-next:hover {
+  background: #BEBAC8;
+  color: #FFF; }
+
+.nav-previous {
+  text-align: right; }
+
+.nav-next {
+  text-align: left; }
 
 input#submit.submit {
-  background: #54496C;
+  background: #505050;
   color: #FFF;
   margin-top: 3%;
   padding: 10px 15px;
@@ -438,7 +456,7 @@ input#submit.submit {
 
 input#submit.submit:hover {
   background: teal;
-  transition: background .5s; }
+  transition: background .2s; }
 
 /* Global Classes / Wordpress Specific */
 .aligncenter {
@@ -476,7 +494,7 @@ body {
 
 /* links */
 a {
-  color: #BA209B;
+  color: #505050;
   text-decoration: none; }
 
 a:hover {

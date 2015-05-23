@@ -10,8 +10,8 @@
   position:relative;
   width:100%;
   height:300px;
-  height: -webkit-calc(100vh*0.35);
-  height: calc(100vh*0.35);
+  height:-webkit-calc(100vh*0.45);
+  height:calc(100vh*0.45);
   margin-bottom:35px;
   background-color:#222;
 }
@@ -41,7 +41,6 @@ h2.hero-title {
   margin:0;
 
   a {
-  font-family:'Droid Sans', sans-serif;
   color:#FFF;
   line-height:45px;
   font-weight:400;
@@ -75,6 +74,16 @@ h2.hero-title {
   }
 }
 
+// Single Post - Actual Content
+
+.page-content h3 {
+  font-size:24px;
+}
+
+.page-content {
+  font-size:20px;
+}
+
 // Single Post Tags List
 
 ul.tags {
@@ -96,38 +105,52 @@ ul.tags {
 //Single Post Previous / Next Navigation
 
 .post-navigation {
-  margin-top:5%;
+  margin-top:3%;
 }
 
 .post-navigation a {
-  color:#FFF;
-  font-family:'Droid Sans', sans-serif;
-}
-
-.post-navigation .nav-previous, .post-navigation .nav-next {
-  width:50%;
-  background-color:#222;
-  color:#FFF;
-  float:left;
-  height:80px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:4% 6%;
 }
 
 .nav-previous, .nav-next {
-  padding-top:2%;
+  float:left;
+  width:50%;
+  height:80px;
+  margin:0;
+  background-color:#f8f8f8;
+  border:1px solid #FFF;
 }
 
-.nav-previous a {
-  padding-left:20%;
+.nav-previous a, .nav-next a {
+  color:#505050;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
 }
 
-.nav-next a {
-  padding-right:20%;
+.nav-previous a:hover, .nav-next a:hover {
+  color:#FFF;
+}
+
+.nav-previous:hover, .nav-next:hover {
+  background:#BEBAC8;
+  color:#FFF;
+}
+
+.nav-previous {
+  text-align:right;
+}
+
+.nav-next {
+  text-align:left;
 }
 
 //Single Post Comments
 
 input#submit.submit {
-  background:$secondary;
+  background:#505050;
   color:#FFF;
   margin-top:3%;
   padding:10px 15px;
@@ -139,5 +162,5 @@ input#submit.submit {
 
 input#submit.submit:hover {
   background:$tertiary;
-  transition: background .5s;
+  transition: background .2s;
 }

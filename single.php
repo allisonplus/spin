@@ -50,7 +50,7 @@
           }
           ?>
 
-        <div id="nav-below" class="post-navigation">
+        <div id="nav-below" class="clearfix post-navigation">
           <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
           <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
         </div><!--/.post-navigation -->

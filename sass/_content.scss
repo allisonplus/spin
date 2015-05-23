@@ -109,6 +109,8 @@ span.entry-date p {
   transform:skew(20deg);
 }
 
+// Previous & Next Post Links
+
 .alignleft, .alignright {
   width:50%;
   height:80px;
@@ -154,10 +156,9 @@ ul.social {
       width:40px;
       height:40px;
       color:#505050;
-
       &:hover {
         color:$tertiary;
-        // transform:color 4s;
+        transition:color .6s;
       }
     }
   }
