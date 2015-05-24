@@ -17,6 +17,23 @@ function theme_setup() {
 	add_image_size('blog-pull', 1400, 400, true);
 	add_image_size('highlighted', 800, 500, true);
 
+	// Adds image sizes to actual WordPress Media Gallery
+	if ( function_exists( 'add_image_size' ) ) {
+	add_image_size( 'one-hundred', 1100, 734, true ); //(full image)
+	add_image_size( 'fifty', 550, 367, true ); //(two images)
+	add_image_size( 'thirty-three', 360, 245, true ); //(three images)
+	}
+	add_filter('image_size_names_choose', 'my_image_sizes');
+	function my_image_sizes($sizes) {
+	$addsizes = array(
+	"one-hundred" => __( "One Hundred"),
+	"fifty" => __( "Fifty"),
+	"thirty-three" => __( "Thirty-Three"),
+	);
+	$newsizes = array_merge($sizes, $addsizes);
+	return $newsizes;
+	}
+
 	// Add default posts and comments RSS feed links to head
 	add_theme_support( 'automatic-feed-links' );
 
