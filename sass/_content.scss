@@ -40,7 +40,6 @@ article {
   font-size:35px;
   line-height:35px;
   margin:0 8px 0 0;
-  // font-family:'Droid Sans', sans-serif;
 }
 
 h2.entry-title {
@@ -111,13 +110,23 @@ span.entry-date p {
 
 // Previous & Next Post Links
 
+.left-right {
+  clear:both;
+}
+
+.left-right a {
+  display:block;
+  width:100%;
+  height:100%;
+  padding:4% 6%;
+}
+
 .alignleft, .alignright {
   width:50%;
   height:80px;
   margin:0;
   background-color:#f8f8f8;
   border:1px solid #FFF;
-  padding-top:2%;
 }
 
 .alignleft a, .alignright a {
@@ -126,17 +135,20 @@ span.entry-date p {
   letter-spacing:1.2px;
 }
 
+.alignright a:hover, .alignleft a:hover {
+  color:#FFF;
+}
+
 .alignleft:hover, .alignright:hover {
   background:#BEBAC8;
+  transition:background 0.6s;
 }
 
 .alignleft {
-	padding-right:35px;
   text-align:right;
 }
 
 .alignright {
-	padding-left:25px;
   text-align:left;
 }
 
