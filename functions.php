@@ -20,8 +20,8 @@ function theme_setup() {
 	// Adds image sizes to actual WordPress Media Gallery
 	if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'one-hundred', 1100, 734, true ); //(full image)
-	add_image_size( 'fifty', 550, 367, true ); //(two images)
-	add_image_size( 'thirty-three', 360, 245, true ); //(three images)
+	add_image_size( 'fifty', 545, 346, true ); //(two images)
+	add_image_size( 'thirty-three', 360, 228, true ); //(three images)
 	}
 	add_filter('image_size_names_choose', 'my_image_sizes');
 	function my_image_sizes($sizes) {
@@ -33,12 +33,7 @@ function theme_setup() {
 	$newsizes = array_merge($sizes, $addsizes);
 	return $newsizes;
 	}
-
-	// function to remove <p> tags on images
-	function filter_ptags_on_images($content){
-	    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
-	}
-	add_filter('the_content', 'filter_ptags_on_images');
+	
 	// function to set default image link to none
 	update_option('image_default_link_type','none');
 
@@ -65,6 +60,11 @@ endif;
 
 add_action( 'after_setup_theme', 'theme_setup' );
 
+// function to remove <p> tags on images
+	function filter_ptags_on_images($content){
+	    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+	}
+	add_filter('the_content', 'filter_ptags_on_images');
 
 /* Add all our JavaScript files here.
 We'll let WordPress add them to our templates automatically instead
