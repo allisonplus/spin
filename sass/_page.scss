@@ -12,3 +12,69 @@
 		font-weight:400;
 	}
 }
+
+// About
+
+
+
+
+// Contact 
+
+.form {
+	padding-top:50px;
+	height:550px;
+}
+
+.inner-form {
+	width:80%;
+	margin:0 auto;
+	border:1px solid black;
+}
+
+input, textarea {
+	margin:0 auto;
+	background-color:#f2f2f2;
+	width:85%;
+	color:#686868;
+	font-size:16px;
+	font-weight:400;
+	margin-top:20px;
+	margin-bottom:15px;
+	padding:10px 0;
+	display:block;
+	text-align:left;
+	border:0px;
+	padding-left:10px;
+}
+
+input:focus, textarea:focus {
+	// border:1px solid $tertiary;
+}
+
+.form p {
+	text-align:center;
+	font-size:20px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.form button {
+	display:block;
+	text-transform:uppercase;
+	margin:-3px auto;
+	font-size:14px;
+	font-weight:400;
+	padding:10px 30px;
+	background-color:white;
+	color:black;
+	border:1px solid black;
+	position:relative;
+	top:15px;
+}
+
+.form button:hover {
+	background-color:$tertiary;
+	border:none;
+	color:white;
+	transition:background-color .3s;
+}
