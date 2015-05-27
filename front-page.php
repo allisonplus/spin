@@ -4,12 +4,11 @@
 
 <div class="main">
   <div class="container">
-  
-    <div class="content clearfix">
 
+    <div class="content clearfix">
   		<?php $mainQuery = new WP_Query(
     		array( 
-    				'posts_per_page' => 4,
+    				'posts_per_page' => 6,
     				) 
   		); ?>
 
@@ -57,11 +56,9 @@
   			
   		<?php endif; ?>
 
-    </div> <!--/.content -->
 
-		<div class="slideout">
-    	<?php get_sidebar(); ?>
-    </div> <!--/.slideout-->
+
+    </div> <!--/.content -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
