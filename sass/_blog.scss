@@ -1,0 +1,88 @@
+@import "carryovers";
+
+// Blog Page (not front page)
+
+.bp-content {
+	max-width:1600px;
+	margin:0 25px;
+}
+
+.bp-content article {
+	width:100%;
+	float:left;
+	background:none;
+	margin-bottom:4%;
+}
+
+.bp-content a.post-link {
+	width:50%;
+}
+
+.bp-content .photo-highlighted {
+	float:left;
+	width:50%;
+	opacity:1.0;
+}
+
+.type-post:hover .photo-highlighted {
+  opacity:.4;
+  transition:opacity .6s;
+}
+
+.bp-content .type-post:hover .photo-highlighted {
+	opacity:1.0;
+}
+
+.bp-content .bp-thumbnail-header {
+	width:45%;
+	float:left;
+	margin:0 2%;
+	// text-align:center;
+	display:flex;
+  justify-content:center;
+  flex-direction:column;
+  height:100%;
+}
+
+.bp-thumbnail-header h2.entry-title a {
+	color:#505050;
+	font-size:40px;
+	line-height:1.1;
+}
+
+.bp-thumbnail-header .meta-data, .bp-thumbnail-header span.entry-date p {
+	color:#505050;
+}
+
+.bp-thumbnail-header span.entry-date p {
+	font-family:'Droid Sans', sans-serif;
+	font-size: 14px;
+}
+
+.bp-thumbnail-header p {
+	font-family: 'Droid Serif', serif;
+	font-size:18px;
+}
+
+button.readMore {
+	background:none;
+	border:none;
+	width:25%;
+	padding:0;
+}
+
+button.readMore a {
+	margin-top:25%;
+	color:#505050;
+	display:block;
+  border:2px solid #505050;
+  text-transform:uppercase;
+	font-family:'Droid Sans', sans-serif;
+	padding:10px 15px;
+	letter-spacing:1.9px;
+	&:hover {
+		background:#505050;
+		color:white;
+		transition:0.2s;
+	}
+}
