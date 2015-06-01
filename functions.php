@@ -173,7 +173,6 @@ function hackeryou_custom_excerpt_more( $output ) {
 }
 add_filter( 'get_the_excerpt', 'hackeryou_custom_excerpt_more' );
 
-
 /*
  * Register a single widget area.
  * You can register additional widget areas by using register_sidebar again
