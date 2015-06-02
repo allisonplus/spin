@@ -314,7 +314,6 @@ span.entry-date p {
   height: 100%;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  padding-right: 4%;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -328,6 +327,12 @@ span.entry-date p {
 
 .alignright {
   text-align: left; }
+
+.alignright a {
+  padding-left: 4%; }
+
+.alignleft a {
+  padding-right: 4%; }
 
 ul.social {
   font-size: 25px;
