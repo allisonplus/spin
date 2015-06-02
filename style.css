@@ -488,6 +488,12 @@ input#submit.submit:hover {
   .four-oh-four h3 {
     font-weight: 400; }
 
+.grid-sizer, .grid-item {
+  width: 20%; }
+
+.grid-item--width2 {
+  width: 40%; }
+
 .form {
   padding-top: 50px;
   height: 550px; }
@@ -598,15 +604,19 @@ h1, h2, p, a {
 
 a.readMore {
   border: none;
-  width: 32%;
-  margin-top: 15%;
+  font-size: 14px;
+  width: 28%;
+  margin-top: 5%;
   color: #505050;
   background: #f3f3f3;
   display: block;
   text-transform: uppercase;
   font-family: 'Droid Sans', sans-serif;
-  padding: 10px 15px;
+  padding: 6px 15px;
   letter-spacing: 1.9px; }
+  a.readMore span {
+    margin: 0;
+    padding: 0; }
   a.readMore:hover {
     background: #b2b2b2;
     color: #FFF;

@@ -67,15 +67,20 @@
 
 a.readMore {
 	border:none;
-	width:32%;
-	margin-top:15%;
+	font-size:14px;
+	width:28%;
+	margin-top:5%;
 	color:#505050;
 	background:#f3f3f3;
 	display:block;
   text-transform:uppercase;
 	font-family:'Droid Sans', sans-serif;
-	padding:10px 15px;
+	padding:6px 15px;
 	letter-spacing:1.9px;
+	span {
+		margin:0;
+		padding:0;
+	}
 	&:hover {
 		background:#b2b2b2;
 		color:#FFF;

@@ -76,7 +76,7 @@ function hackeryou_scripts() {
 	wp_deregister_script('jquery');
   wp_enqueue_script(
   	'jquery',
-  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+  	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js",
   	false, //dependencies
   	null, //version number
   	true //load in footer
@@ -94,6 +94,14 @@ function hackeryou_scripts() {
     'scripts', //handle
     get_template_directory_uri() . '/js/scripts.js', //source
     array( 'jquery', 'plugins' ), //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'masonry', //handle
+    get_template_directory_uri() . '/js/masonry.pkgd.min.js', //source
+    false, //dependencies
     null, // version number
     true //load in footer
   );
