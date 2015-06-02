@@ -302,22 +302,26 @@ span.entry-date p {
 
 .alignleft, .alignright {
   width: 50%;
-  height: 80px;
+  height: 50px;
   margin: 0;
-  background-color: #f8f8f8;
-  border: 1px solid #FFF; }
+  color: #505050;
+  background: #f3f3f3;
+  border-right: 3px solid #FFF;
+  margin-bottom: 2%; }
 
 .alignleft a, .alignright a {
-  color: #505050;
+  display: block;
+  height: 100%;
   text-transform: uppercase;
-  letter-spacing: 1.2px; }
-
-.alignright a:hover, .alignleft a:hover {
-  color: #FFF; }
-
-.alignleft:hover, .alignright:hover {
-  background: #BEBAC8;
-  transition: background 0.6s; }
+  letter-spacing: 1.2px;
+  padding-right: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .alignleft a:hover, .alignright a:hover {
+    background: #b2b2b2;
+    color: #FFF;
+    transition: 0.2s; }
 
 .alignleft {
   text-align: right; }
@@ -562,9 +566,9 @@ h1, h2, p, a {
   opacity: 1.0; }
 
 .bp-content .bp-thumbnail-header {
-  width: 45%;
+  width: 43%;
   float: left;
-  margin: 0 2%;
+  margin: 0 3%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -584,26 +588,23 @@ h1, h2, p, a {
 
 .bp-thumbnail-header p {
   font-family: 'Droid Serif', serif;
-  font-size: 18px; }
+  font-size: 20px;
+  line-height: 1.6; }
 
-button.readMore {
-  background: none;
+a.readMore {
   border: none;
-  width: 25%;
-  padding: 0; }
-
-button.readMore a {
-  margin-top: 25%;
+  width: 32%;
+  margin-top: 15%;
   color: #505050;
+  background: #f3f3f3;
   display: block;
-  border: 2px solid #505050;
   text-transform: uppercase;
   font-family: 'Droid Sans', sans-serif;
   padding: 10px 15px;
   letter-spacing: 1.9px; }
-  button.readMore a:hover {
-    background: #505050;
-    color: white;
+  a.readMore:hover {
+    background: #b2b2b2;
+    color: #FFF;
     transition: 0.2s; }
 
 /* Global Classes / Wordpress Specific */
