@@ -34,9 +34,9 @@
 }
 
 .bp-content .bp-thumbnail-header {
-	width:45%;
+	width:43%;
 	float:left;
-	margin:0 2%;
+	margin:0 3%;
 	// text-align:center;
 	display:flex;
   justify-content:center;
@@ -56,33 +56,29 @@
 
 .bp-thumbnail-header span.entry-date p {
 	font-family:'Droid Sans', sans-serif;
-	font-size: 14px;
+	font-size:14px;
 }
 
 .bp-thumbnail-header p {
-	font-family: 'Droid Serif', serif;
-	font-size:18px;
+	font-family:'Droid Serif', serif;
+	font-size:20px;
+	line-height:1.6;
 }
 
-button.readMore {
-	background:none;
+a.readMore {
 	border:none;
-	width:25%;
-	padding:0;
-}
-
-button.readMore a {
-	margin-top:25%;
+	width:32%;
+	margin-top:15%;
 	color:#505050;
+	background:#f3f3f3;
 	display:block;
-  border:2px solid #505050;
   text-transform:uppercase;
 	font-family:'Droid Sans', sans-serif;
 	padding:10px 15px;
 	letter-spacing:1.9px;
 	&:hover {
-		background:#505050;
-		color:white;
+		background:#b2b2b2;
+		color:#FFF;
 		transition:0.2s;
 	}
 }
