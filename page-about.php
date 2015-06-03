@@ -8,10 +8,10 @@
     <div class="about-photo">
           <?php while( has_sub_field('images') ): ?>
 
-          <div class="grid js-masonry image">
+          <div class="image">
             <?php $image = get_sub_field('image'); ?>
-            <img class="grid-item grid-item--width2" src="<?php echo $image['sizes']['sp-full'] ?>">
-          </div>
+            <img class="item" src="<?php echo $image['sizes']['highlighted'] ?>">
+          </div> <!--/.image-->
         <?php endwhile; ?>
     </div>
 

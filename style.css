@@ -488,11 +488,10 @@ input#submit.submit:hover {
   .four-oh-four h3 {
     font-weight: 400; }
 
-.grid-sizer, .grid-item {
-  width: 20%; }
-
-.grid-item--width2 {
-  width: 40%; }
+img.item {
+  width: 25%;
+  display: inline-block;
+  float: left; }
 
 .form {
   padding-top: 50px;

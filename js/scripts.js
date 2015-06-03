@@ -1,3 +1,3 @@
-$(function(){
-	//your jQuery here
-});
+// $(function(){
+// 	//your jQuery here
+// });

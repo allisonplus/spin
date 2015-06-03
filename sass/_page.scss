@@ -15,14 +15,10 @@
 
 // About
 
-// Masonry
-
-.grid-sizer, .grid-item {
-	width:20%;
-}
-
-.grid-item--width2 {
-	width: 40%;
+img.item {
+	width:25%;
+	display:inline-block;
+	float:left;
 }
 
 // Contact 
