@@ -3,7 +3,7 @@
 <div class="main">
   <div class="container">
 
-    <div class="page-content">
+    <div class="page-content-about">
 
       <div class="info">
         <?php // Start the loop ?>
@@ -18,7 +18,7 @@
         <?php $image = get_field('user-image'); ?>
         <img class="photo" src="<?php echo $image['sizes']['one-hundred'] ?>">
       </div> <!--/.user-photo-->
-    </div> <!-- /.page-content -->
+    </div> <!-- /.page-content-about -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

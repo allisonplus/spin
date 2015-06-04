@@ -15,30 +15,44 @@
 
 // About
 
-.page-content {
+.page-content-about {
 	margin:3% 25px;
 }
 
-.user-photo {
+.page-content-about .user-photo {
 	width:20%;
 	display:inline-block;
-	margin-left:10%;
+	margin-left:4%;
 }
 
-img.photo {
+.page-content-about img.photo {
 	max-width:400px;
 	display:inline-block;
 	float:left;
 }
 
-.info {
-	width:70%;
+.page-content-about .info {
+	width:65%;
 	display:inline-block;
 	float:left;
 }
 
-.info p {
+.page-content-about .info p {
 	margin-top:0;
+	font-size:18px;
+	line-height:1.7;
+}
+
+.page-content-about .info #sb_instagram {
+	margin-top:8%;
+}
+
+// Category Archives 
+
+h1.cat {
+	margin:0 0 10px 25px;
+	color:#686868;
+	font-size:20px;
 }
 
 // Contact 
