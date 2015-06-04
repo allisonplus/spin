@@ -17,6 +17,7 @@
 
 .page-content-about {
 	margin:3% 25px;
+	height:551px;
 }
 
 .page-content-about .user-photo {
@@ -35,6 +36,9 @@
 	width:65%;
 	display:inline-block;
 	float:left;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
 }
 
 .page-content-about .info p {
@@ -44,7 +48,7 @@
 }
 
 .page-content-about .info #sb_instagram {
-	margin-top:8%;
+	margin-top:10%;
 }
 
 // Category Archives 
