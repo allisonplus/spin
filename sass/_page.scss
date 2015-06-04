@@ -15,10 +15,30 @@
 
 // About
 
-img.item {
-	width:25%;
+.page-content {
+	margin:3% 25px;
+}
+
+.user-photo {
+	width:20%;
+	display:inline-block;
+	margin-left:10%;
+}
+
+img.photo {
+	max-width:400px;
 	display:inline-block;
 	float:left;
+}
+
+.info {
+	width:70%;
+	display:inline-block;
+	float:left;
+}
+
+.info p {
+	margin-top:0;
 }
 
 // Contact 

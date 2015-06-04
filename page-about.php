@@ -5,26 +5,20 @@
 
     <div class="page-content">
 
-    <div class="about-photo">
-          <?php while( has_sub_field('images') ): ?>
+      <div class="info">
+        <?php // Start the loop ?>
+        <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-          <div class="image">
-            <?php $image = get_sub_field('image'); ?>
-            <img class="item" src="<?php echo $image['sizes']['highlighted'] ?>">
-          </div> <!--/.image-->
-        <?php endwhile; ?>
-    </div>
+          <?php the_content(); ?>
 
-      <?php // Start the loop ?>
-      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        <?php endwhile; // end the loop?>
+      </div> <!--/.info-->
 
-        <h2><?php the_title(); ?></h2>
-
-        <?php the_content(); ?>
-
-      <?php endwhile; // end the loop?>
-        
-    </div> <!-- /,content -->
+      <div class="user-photo">
+        <?php $image = get_field('user-image'); ?>
+        <img class="photo" src="<?php echo $image['sizes']['one-hundred'] ?>">
+      </div> <!--/.user-photo-->
+    </div> <!-- /.page-content -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
