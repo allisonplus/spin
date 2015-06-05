@@ -165,3 +165,11 @@ input#submit.submit:hover {
   background:$tertiary;
   transition: background .2s;
 }
+
+textarea#comment {
+  margin-left:0;
+}
+
+article.comment-body {
+  float:none;
+}
