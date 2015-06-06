@@ -8,7 +8,7 @@
       <!-- <h2>Yours Truly</h2> -->
       <div class="user-photo">
         <?php $image = get_field('user-image'); ?>
-        <img class="photo" src="<?php echo $image['sizes']['one-hundred'] ?>">
+        <img class="photo" src="<?php echo $image['sizes']['highlighted'] ?>">
       </div> <!--/.user-photo-->
       <div class="info">
         <?php // Start the loop ?>

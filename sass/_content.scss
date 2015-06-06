@@ -8,7 +8,7 @@ article {
   border:1px solid #FFF;
 }
 
-.photo-highlighted {
+.content .photo-highlighted {
   opacity:.6;
   width:800px;
   background-size:cover;
@@ -31,7 +31,7 @@ article {
   height:100%;
 }
 
-.thumbnail-header {
+.content .thumbnail-header {
   display:inline-block;
   position:absolute;
   top:30%;
@@ -42,11 +42,11 @@ article {
   margin:0 8px 0 0;
 }
 
-h2.entry-title {
+.content h2.entry-title {
   margin:0;
 }
 
-h2.entry-title a {
+.content h2.entry-title a {
   font-family:'Droid Sans', sans-serif;
   color:#FFF;
   font-size:35px;
@@ -110,18 +110,18 @@ span.entry-date p {
 
 // Previous & Next Post Links
 
-.left-right {
-  clear:both;
-}
+// .left-right {
+//   clear:both;
+// }
 
-.left-right a {
-  display:block;
-  width:100%;
-  height:100%;
-  padding:4% 6%;
-}
+// .left-right a {
+//   display:block;
+//   width:100%;
+//   height:100%;
+//   padding:4% 6%;
+// }
 
-.alignleft, .alignright {
+.bp-content .alignleft, .bp-content .alignright {
   width:50%;
   height:50px;
   margin:0;

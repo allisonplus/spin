@@ -16,40 +16,30 @@
 // About
 
 .page-content-about {
-	margin:3% 25px;
-	height:551px;
-}
-
-.page-content-about .user-photo {
-	width:20%;
-	display:inline-block;
-	margin-left:4%;
+	padding:0 25px;
+	text-align:center;
 }
 
 .page-content-about img.photo {
-	max-width:400px;
-	display:inline-block;
-	float:left;
+	max-width:100%;
 }
 
 .page-content-about .info {
-	width:65%;
-	display:inline-block;
-	float:left;
-	display:flex;
-	justify-content:center;
-	flex-direction:column;
+	max-width:800px;
+	margin:1% auto;
 }
 
 .page-content-about .info p {
-	margin-top:0;
 	font-size:18px;
-	line-height:1.7;
+	line-height:1.6;
+	&:first-child {
+	  margin-top:0;
+	}
 }
 
-.page-content-about .info #sb_instagram {
-	margin-top:10%;
-}
+// .page-content-about .info #sb_instagram {
+// 	margin-top:10%;
+// }
 
 // Category Archives 
 

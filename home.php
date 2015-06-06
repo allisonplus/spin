@@ -29,7 +29,7 @@
     			$thumb_url = $thumb_url_array[0];
     		?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article class="bp-article"id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<div class="bp-photo-highlighted clearfix p" style="background-image:url(<?= $thumb_url ?>)">
 				</div> <!--/photo-highlighted-->
@@ -69,7 +69,7 @@
 		  <p class="alignright"><?php previous_posts_link("Newer Entries &raquo;"); ?></p>
 		<?php endif; ?>
   		
-    </div> <!--/.content -->
+    </div> <!--/.bp-content -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

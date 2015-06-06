@@ -204,7 +204,7 @@ article {
   background-color: #222;
   border: 1px solid #FFF; }
 
-.photo-highlighted {
+.content .photo-highlighted {
   opacity: .6;
   width: 800px;
   background-size: cover;
@@ -224,7 +224,7 @@ article {
   width: 100%;
   height: 100%; }
 
-.thumbnail-header {
+.content .thumbnail-header {
   display: inline-block;
   position: absolute;
   top: 30%;
@@ -234,10 +234,10 @@ article {
   line-height: 35px;
   margin: 0 8px 0 0; }
 
-h2.entry-title {
+.content h2.entry-title {
   margin: 0; }
 
-h2.entry-title a {
+.content h2.entry-title a {
   font-family: 'Droid Sans', sans-serif;
   color: #FFF;
   font-size: 35px;
@@ -291,16 +291,7 @@ span.entry-date p {
   margin-right: 8px;
   transform: skew(20deg); }
 
-.left-right {
-  clear: both; }
-
-.left-right a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 4% 6%; }
-
-.alignleft, .alignright {
+.bp-content .alignleft, .bp-content .alignright {
   width: 50%;
   height: 50px;
   margin: 0;
@@ -489,34 +480,21 @@ article.comment-body {
     font-weight: 400; }
 
 .page-content-about {
-  margin: 3% 25px;
-  height: 551px; }
-
-.page-content-about .user-photo {
-  width: 20%;
-  display: inline-block;
-  margin-left: 4%; }
+  padding: 0 25px;
+  text-align: center; }
 
 .page-content-about img.photo {
-  max-width: 400px;
-  display: inline-block;
-  float: left; }
+  max-width: 100%; }
 
 .page-content-about .info {
-  width: 65%;
-  display: inline-block;
-  float: left;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  max-width: 800px;
+  margin: 1% auto; }
 
 .page-content-about .info p {
-  margin-top: 0;
   font-size: 18px;
-  line-height: 1.7; }
-
-.page-content-about .info #sb_instagram {
-  margin-top: 10%; }
+  line-height: 1.6; }
+  .page-content-about .info p:first-child {
+    margin-top: 0; }
 
 h1.cat {
   margin: 0 0 10px 25px;
@@ -656,26 +634,29 @@ a.readMore {
     color: #FFF;
     transition: 0.2s; }
 
+/*=============================
+    Media Queries
+============================*/
 @media (max-width: 1200px) {
   article {
     height: 400px; }
-  h2.entry-title a {
+  .content h2.entry-title a {
     font-size: 30px; } }
 
-@media (max-width: 950px) {
+@media (max-width: 980px) {
   .bp-thumbnail-header h2.entry-title a {
     font-size: 26px;
     line-height: 1.5; }
   .bp-thumbnail-header p {
     font-size: 16px;
-    line-height: 1.5; } }
+    line-height: 1.4; } }
 
 @media (max-width: 860px) {
   article {
     height: 300px; }
-  h2.entry-title {
+  .content h2.entry-title {
     margin-top: 5px; }
-    h2.entry-title a {
+    .content h2.entry-title a {
       font-size: 24px;
       line-height: normal; }
   a.readMore {
@@ -683,27 +664,26 @@ a.readMore {
     width: 140px;
     font-size: 12px;
     padding: 4px 10px; }
-  .thumbnail-header {
-    top: 25%;
+  .content .thumbnail-header {
+    top: 15%;
     line-height: 10px; }
   span.entry-cat {
-    margin-right: 24px; }
+    margin-right: 10px; }
   .bp-content .bp-thumbnail-header {
     margin: 0;
     margin-left: 4%;
     width: 46%; }
   .bp-thumbnail-header .meta-data {
-    letter-spacing: 1px;
-    font-size: 10px; }
+    letter-spacing: 1px; }
   .bp-thumbnail-header h2.entry-title a {
     font-size: 22px; }
   .bp-thumbnail-header p {
     line-height: 1.4; } }
 
 @media (max-width: 740px) {
-  article {
+  article.bp-article {
     height: 250px; }
-  h2.entry-title a {
+  .content h2.entry-title a {
     font-size: 20px; }
   .bp-content .bp-thumbnail-header {
     height: 90%;
@@ -776,7 +756,7 @@ a.readMore {
     width: 25%; } }
 
 @media (max-width: 480px) {
-  article {
+  article.bp-article {
     height: inherit; }
   .bp-content .bp-thumbnail-header {
     width: 100%;
@@ -791,11 +771,45 @@ a.readMore {
     width: 100%;
     height: 200px; }
   .bp-thumbnail-header span.entry-date {
-    margin-left: 15%; } }
+    margin-left: 15px; }
+  .page-content-about .info {
+    width: 100%;
+    margin: 0;
+    margin-top: 2%; }
+    .page-content-about .info p {
+      font-size: 14px;
+      text-align: justify; }
+  ul.social {
+    margin-top: 3%; } }
 
 @media (max-width: 400px) {
-  .thumbnail-header {
+  .content .thumbnail-header {
     top: 10%; } }
+
+@media (max-width: 320px) {
+  .content .thumbnail-header {
+    top: 15%; }
+  .content .thumbnail-header .entry-date {
+    display: block;
+    margin-left: 15px; }
+    .content .thumbnail-header .entry-date p {
+      margin-top: 5px; }
+  .bp-thumbnail-header .meta-data {
+    margin-top: 10px; }
+    .bp-thumbnail-header .meta-data .entry-date {
+      display: block; }
+      .bp-thumbnail-header .meta-data .entry-date p {
+        margin-top: 5px; }
+  .bp-thumbnail-header h2.entry-title {
+    margin: 0; }
+  .bp-content .alignleft, .bp-content .alignright {
+    font-size: 12px;
+    height: 30px; }
+  .fa-clock-o {
+    margin-right: 5px; }
+  .form {
+    padding-top: 10px;
+    height: 500px; } }
 
 /* Global Classes / Wordpress Specific */
 .aligncenter {
