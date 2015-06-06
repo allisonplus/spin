@@ -18,18 +18,23 @@
 	width:50%;
 }
 
-.bp-content .photo-highlighted {
+.bp-content .bp-photo-highlighted {
 	float:left;
+  max-width:100%;
 	width:50%;
 	opacity:1.0;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:50%;
+  height:100%;
 }
 
-.type-post:hover .photo-highlighted {
+.type-post:hover .bp-photo-highlighted {
   opacity:.4;
   transition:opacity .6s;
 }
 
-.bp-content .type-post:hover .photo-highlighted {
+.bp-content .type-post:hover .bp-photo-highlighted {
 	opacity:1.0;
 }
 

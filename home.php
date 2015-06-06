@@ -31,7 +31,7 @@
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<div class="photo-highlighted clearfix p" style="background-image:url(<?= $thumb_url ?>)">
+				<div class="bp-photo-highlighted clearfix p" style="background-image:url(<?= $thumb_url ?>)">
 				</div> <!--/photo-highlighted-->
 
 				<a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>
