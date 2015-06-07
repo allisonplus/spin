@@ -22,7 +22,6 @@
   top:0;
   left:0;
   width:100%;
-  // max-width:1300px;
   height:100%;
   background-size:cover;
   background-repeat:no-repeat;
@@ -47,6 +46,7 @@ h2.hero-title {
   position:relative;
   text-transform:uppercase;
   top:16%;
+  width:90%;
 }
 
 .hero-data {
@@ -86,6 +86,13 @@ h2.hero-title {
 .gallery-item {
   display:inline-block;
   float:left;
+}
+
+.gallery-item img.attachment-one-hundred,
+.gallery-item img.attachment-fifty,
+.gallery-item img.attachment-thirty-three {
+  max-width:100%;
+  height:auto;
 }
 
 // Single Post Tags List
