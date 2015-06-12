@@ -12,7 +12,7 @@ function theme_setup() {
 	*  sizes with add_image_size. */
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(120, 90, true);
-	add_image_size('square', 150, 150, true);
+	// add_image_size('square', 150, 150, true);
 	add_image_size('sp-full', 1100, 734, true);
 	add_image_size('blog-pull', 1400, 400, true);
 	add_image_size('highlighted', 800, 500, true);
@@ -20,7 +20,8 @@ function theme_setup() {
 	// Adds image sizes to actual WordPress Media Gallery
 	if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'one-hundred', 1100, 734, true ); //(full image)
-	add_image_size( 'fifty', 545, 346, true ); //(two images)
+	add_image_size( 'fifty', 545, 346, true ); //(two images - horizontal)
+	add_image_size( 'fiftyV', 545, 818, true ); //(two images - vertical)
 	add_image_size( 'thirty-three', 360, 228, true ); //(three images)
 	}
 	add_filter('image_size_names_choose', 'my_image_sizes');
@@ -28,6 +29,7 @@ function theme_setup() {
 		$addsizes = array(
 			"one-hundred" => __( "One Hundred"),
 			"fifty" => __( "Fifty"),
+			"fiftyV" => __( "Fifty Vertical"),
 			"thirty-three" => __( "Thirty-Three"),
 		);
 	$newsizes = array_merge($sizes, $addsizes);

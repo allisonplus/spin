@@ -12,7 +12,7 @@
 
       <?php endwhile; // end the loop?>
 
-      <div class="form" form method="post" action="mailto:hello@allisontarr.com" enctype="text/plain">
+      <!-- <div class="form" form method="post" action="mailto:hello@allisontarr.com" enctype="text/plain"> -->
         <!-- <div class="inner-form"> -->
           <!-- <p>More you want to chat about? Shoot me an email.</p> -->
           <!-- <input type="name" placeholder="Name">
@@ -20,7 +20,7 @@
           <textarea name="Message" placeholder="Message" cols="30" rows="10"></textarea>
           <button class="submit">Submit</button> -->
         <!-- </div> /ends .inner-form -->
-      </div> <!--ends /.form-->
+      <!-- </div> ends /.form -->
         
     </div> <!-- /,content -->
 
