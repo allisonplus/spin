@@ -410,9 +410,6 @@ h2.hero-title {
   max-width: 100%;
   height: auto; }
 
-.gallery-item img.attachment-fiftyV {
-  margin-right: 50px; }
-
 .gallery-item img.attachment-thirty-three {
   margin-right: 5px; }
   .gallery-item img.attachment-thirty-three:not(:last-child) {

@@ -96,7 +96,11 @@ h2.hero-title {
 }
 
 .gallery-item img.attachment-fiftyV {
-  margin-right:50px;
+  // display:block;
+//   margin-right:5px;
+//   &:not(:last-child) {
+//     margin-right:0;
+//   }
 }
 
 .gallery-item img.attachment-thirty-three {

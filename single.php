@@ -40,7 +40,7 @@
           </div> <!--/.hero-->
         </div><!-- #post-## -->
 
-        <div class="page-content">
+        <div class="page-content clearfix">
           <?php the_content(); ?>
         </div> <!--/.page-content-->
 
