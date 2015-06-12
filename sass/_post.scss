@@ -95,6 +95,17 @@ h2.hero-title {
   height:auto;
 }
 
+.gallery-item img.attachment-fiftyV {
+  margin-right:50px;
+}
+
+.gallery-item img.attachment-thirty-three {
+  margin-right:5px;
+  &:not(:last-child) {
+    margin-right:0;
+  }
+}
+
 // Single Post Tags List
 
 ul.tags {
