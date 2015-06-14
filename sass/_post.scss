@@ -83,24 +83,25 @@ h2.hero-title {
 
 // Gallery (Lightbox Plugin)
 
-.gallery-item {
-  display:inline-block;
-  float:left;
-}
-
 .gallery-item img.attachment-one-hundred,
 .gallery-item img.attachment-fifty,
 .gallery-item img.attachment-thirty-three {
   max-width:100%;
   height:auto;
+  float:left;
 }
 
 .gallery-item img.attachment-fiftyV {
-  // display:block;
-//   margin-right:5px;
-//   &:not(:last-child) {
-//     margin-right:0;
-//   }
+  display:inline-block;
+  margin-bottom:20px;
+  float:left;
+}
+
+//if one portrait photo on its own, center it rather than float
+.gallery-item:only-of-type img.attachment-fiftyV {
+  display:block;
+  margin:0 auto;
+  float:none;
 }
 
 .gallery-item img.attachment-thirty-three {

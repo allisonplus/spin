@@ -30,10 +30,17 @@
 		width:calc(900px / 2);
 		float:left;
 	}
+	.gallery-item img.attachment-fiftyV {
+		// max-width:449px;
+		height:auto;
+		width:calc(900px / 2);
+		float:left;
+	}
 	.gallery-item img.attachment-thirty-three {
 		// max-width:299px;
 		width:calc(900px / 3);
 		float:left;
+		margin-right:0;
 	}
 	.nav-previous, .nav-next {
 		height:60px;
@@ -189,6 +196,9 @@
 }
 
 @media (max-width:736px) and (orientation:landscape) {
+	.gallery-item img.attachment-fiftyV {
+		width:calc(700px / 2);
+	}
 	.nav-previous, .nav-next {
 		height:80px;
 	}
@@ -199,6 +209,9 @@
 }
 
 @media (max-width:667px) and (orientation:landscape) {
+	.gallery-item img.attachment-fiftyV {
+		width:calc(600px / 2);
+	}
 	.nav-previous, .nav-next {
 		height:65px;
 	}
@@ -256,6 +269,10 @@
 	}
 	.gallery-item img.attachment-fifty {
 		width:calc(525px / 2)
+	}
+	.gallery-item img.attachment-fiftyV {
+		width:calc(525px / 2);
+		margin-bottom:0;
 	}
 	.gallery-item img.attachment-thirty-three {
 		width:calc(525px / 3);
@@ -346,6 +363,9 @@
 	.gallery-item img.attachment-fifty {
 		width:calc(450px / 2)
 	}
+	.gallery-item img.attachment-fiftyV {
+		width:calc(450px / 2);
+	}
 	.gallery-item img.attachment-thirty-three {
 		width:calc(450px / 3);
 	}
@@ -427,14 +447,15 @@
 	ul.social {
 		margin-top:3%;
 	}
+
 	.gallery-item img.attachment-one-hundred {
-		max-width:480px;
+		max-width:450px;
 	}
 	.gallery-item img.attachment-fifty {
-		width:calc(480px / 2)
+		width:calc(450px / 2)
 	}
 	.gallery-item img.attachment-thirty-three {
-		width:calc(480px / 3);
+		width:calc(450px / 3);
 		margin-top:5px;
 	}
 	p.nav-previous a, p.nav-next a {
@@ -446,7 +467,7 @@
 	}
 }
 
-@media (max-width:400px) and (orientation:portrait) {
+@media (max-width:414px) and (orientation:portrait) {
 	.content .thumbnail-header {
 		top:10%;
 	}
@@ -463,6 +484,9 @@
 	.gallery-item img.attachment-fifty {
 		width:350px;
 		margin-top:5px;
+	}
+	.gallery-item img.attachment-fiftyV {
+		margin-bottom:5px;
 	}
 	.gallery-item img.attachment-thirty-three {
 		width:350px;
@@ -557,6 +581,15 @@
 	.gallery-item img.attachment-fifty {
 		width:300px;
 		margin-top:5px;
+	}
+	.gallery-item:only-of-type img.attachment-fiftyV {
+		width:300px;
+		height:auto;
+		margin-top:5px;
+	}
+	.gallery-item img.attachment-fiftyV {
+		width:300px;
+		height:auto;
 	}
 	.gallery-item img.attachment-thirty-three {
 		width:300px;
