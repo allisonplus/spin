@@ -8,7 +8,7 @@
     <div class="content clearfix">
   		<?php $mainQuery = new WP_Query(
     		array( 
-    				'posts_per_page' => 6,
+    				'posts_per_page' => 3,
     				) 
   		); ?>
 
