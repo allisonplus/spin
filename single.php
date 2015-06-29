@@ -14,7 +14,7 @@
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
           <div class="hero" id="hero">
-            <div class="hero-image clearfix" style="background-image:url(<?= $thumb_url ?>)">
+            <div class="hero-image clearfix">
             </div> <!--/hero-image-->
 
             <a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>
