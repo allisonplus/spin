@@ -110,18 +110,10 @@ span.entry-date p {
 
 // Previous & Next Post Links
 
-// .left-right {
-//   clear:both;
-// }
-
-// .left-right a {
-//   display:block;
-//   width:100%;
-//   height:100%;
-//   padding:4% 6%;
-// }
-
-.bp-content .alignleft, .bp-content .alignright {
+.bp-content .alignleft,
+.bp-content .alignright,
+.alignL,
+.alignR {
   width:50%;
   height:50px;
   margin:0;
@@ -131,7 +123,27 @@ span.entry-date p {
   margin-bottom:2%;
 }
 
-.alignleft a, .alignright a {
+.alignL, .alignR {
+  float:left;
+}
+
+.alignL {
+  text-align:right;
+}
+
+.alignR {
+  text-align:left;
+}
+
+.alignR a {
+  padding-left:4%;
+}
+
+.alignL a {
+  padding-right:4%;
+}
+
+.alignL a, .alignR a {
   display:block;
   height:100%;
   text-transform:uppercase;
@@ -144,21 +156,6 @@ span.entry-date p {
     color:#FFF;
     transition:0.2s;
   }
-}
-
-.alignleft {
-  text-align:right;
-}
-
-.alignright {
-  text-align:left;
-}
-.alignright a {
-  padding-left:4%;
-}
-
-.alignleft a {
-  padding-right:4%;
 }
 
 // **----FOOTER----** //

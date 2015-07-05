@@ -14,6 +14,8 @@
 
 <?php // if there are posts, Start the Loop. ?>
 
+<section class="loop clearfix">
+
 <?php while ( have_posts() ) : the_post(); ?>
 
 		<?php 
@@ -51,13 +53,14 @@
 		</article><!-- #post-## -->
 
 		<?php comments_template( '', true ); ?>
-
 <?php endwhile; // End the loop. Whew. ?>
+
+</section> <!--/.loop section-->
 
 <div class="left-right clearfix">
 	<?php // Display navigation to next-previous pages when applicable ?>
 	<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-	  <p class="alignleft"><?php next_posts_link('&laquo; Older Entries'); ?></p>
-	  <p class="alignright"><?php previous_posts_link('Newer Entries &raquo;'); ?></p>
+	  <p class="alignL"><?php next_posts_link('&laquo; Older Entries'); ?></p>
+	  <p class="alignR"><?php previous_posts_link('Newer Entries &raquo;'); ?></p>
 	<?php endif; ?>
 </div> <!--/.left-right-->

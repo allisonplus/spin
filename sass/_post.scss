@@ -17,17 +17,18 @@
 }
 
 .hero-image {
-  // background-color:#441B74;
-  background-color:#005979;
-  opacity:.6;
+  opacity:.85;
   position:absolute;
   top:0;
   left:0;
   width:100%;
   height:100%;
-  // background-size:cover;
-  // background-repeat:no-repeat;
-  // background-position: 50%;
+  background-color: #090038; /* fallback */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#221363), to(#221363)); /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-linear-gradient(top, #090038, #221363);  /* Safari 5.1, Chrome 10+ */
+  background: -moz-linear-gradient(top, #090038, #221363); /* Firefox 3.6+ */
+  background: -ms-linear-gradient(top, #090038, #221363);  /* IE 10 */
+  background: -o-linear-gradient(top, #090038, #221363);  /* Opera 11.10+ */
 }
 
 // Single Post Hero Header Data

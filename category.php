@@ -11,10 +11,7 @@
     			echo '' . $category_description . '';
     	   get_template_part( 'loop', 'category' );
         ?>
-
     </div> <!-- /.content -->
-
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
