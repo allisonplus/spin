@@ -13,8 +13,8 @@ function theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(120, 90, true);
 	// add_image_size('square', 150, 150, true);
-	add_image_size('sp-full', 1100, 734, true);
-	add_image_size('blog-pull', 1400, 400, true);
+	// add_image_size('sp-full', 1100, 734, true);
+	// add_image_size('blog-pull', 1400, 400, true);
 	add_image_size('highlighted', 800, 500, true);
 
 	// Adds image sizes to actual WordPress Media Gallery
@@ -96,14 +96,6 @@ function hackeryou_scripts() {
     'scripts', //handle
     get_template_directory_uri() . '/js/scripts.js', //source
     array( 'jquery', 'plugins' ), //dependencies
-    null, // version number
-    true //load in footer
-  );
-
-  wp_enqueue_script(
-    'masonry', //handle
-    get_template_directory_uri() . '/js/masonry.pkgd.min.js', //source
-    false, //dependencies
     null, // version number
     true //load in footer
   );

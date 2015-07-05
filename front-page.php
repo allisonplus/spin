@@ -56,9 +56,10 @@
   			
   		<?php endif; ?>
 
+    </div> <!--/.mainContent -->
 
-
-    </div> <!--/.content -->
+    <div class="secondContent">
+    </div> <!--/secondContent-->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
