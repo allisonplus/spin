@@ -9,11 +9,9 @@
 .hero {
   position:relative;
   width:100%;
-  // height:300px;
-  height:150px;
+  height:220px;
   margin-bottom:35px;
   padding-bottom:40px;
-  // background-color:#222;
 }
 
 .hero-image {
@@ -84,32 +82,50 @@ h2.hero-title {
   margin:0 auto;
 }
 
-// Gallery (Lightbox Plugin)
+// Images within Single Post
 
-.gallery-item img.attachment-one-hundred,
-.gallery-item img.attachment-fifty,
-.gallery-item img.attachment-thirty-three {
+.page-content img.alignnone.size-one-hundred,
+.page-content img.alignnone.size-fifty,
+.page-content img.alignnone.size-thirty-three {
   max-width:100%;
   height:auto;
   float:left;
 }
 
-.gallery-item img.attachment-fiftyV {
+.page-content img.alignnone.size-fiftyV {
   display:inline-block;
   margin-bottom:20px;
   float:left;
+  margin-right:5px;
+  &:last-child {
+    margin-right:0;
+  }
 }
 
 //if one portrait photo on its own, center it rather than float
-.gallery-item:only-of-type img.attachment-fiftyV {
-  display:block;
-  margin:0 auto;
-  float:none;
+
+// .page-content > img.alignnone.size-fiftyV {
+//   float: none;
+//   display: block;
+//   margin: 0 auto;
+// }
+
+// .gallery-item:only-of-type img.attachment-fiftyV {
+//   display:block;
+//   margin:0 auto;
+//   float:none;
+// }
+
+.page-content img.alignnone.size-fifty {
+  margin-right:5px;
+  &:last-child {
+    margin-right:0;
+  }
 }
 
-.gallery-item img.attachment-thirty-three {
+.page-content img.alignnone.size-thirty-three {
   margin-right:5px;
-  &:not(:last-child) {
+  &:last-child {
     margin-right:0;
   }
 }
