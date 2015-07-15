@@ -805,7 +805,9 @@ ul.social {
     height: 80px; }
   .thumbnail-header span.entry-date {
     display: block;
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  h2.hero-title {
+    font-size: 30px; } }
 
 @media (max-width: 667px) and (orientation: landscape) {
   .gallery-item img.attachment-fiftyV {
@@ -859,6 +861,8 @@ ul.social {
     height: 300px; }
   a.readMore {
     margin-top: 8%; }
+  h2.hero-title {
+    font-size: 30px; }
   .bp-thumbnail-header span.entry-date {
     display: block;
     margin-left: 10px; }
@@ -896,7 +900,7 @@ ul.social {
   .hero {
     height: 180px; }
   h2.hero-title {
-    font-size: 35px; } }
+    font-size: 30px; } }
 
 @media (max-width: 520px) and (orientation: portrait) {
   .bp-content .bp-thumbnail-header {
@@ -939,6 +943,8 @@ ul.social {
     text-align: center; }
   .hero {
     height: 160px; }
+  .hero-content {
+    top: 5%; }
   article.bp-article {
     height: 320px; }
   .bp-thumbnail-header h2.entry-title {
@@ -1080,7 +1086,7 @@ ul.social {
     width: 300px;
     margin-top: 5px; }
   .nav-previous, .nav-next {
-    height: 90px; } }
+    height: 55px; } }
 
 /* Global Classes / Wordpress Specific */
 .aligncenter {
