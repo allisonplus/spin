@@ -620,7 +620,8 @@ span.entry-date p {
   color: #505050;
   background: #f3f3f3;
   border-right: 3px solid #FFF;
-  margin-bottom: 2%; }
+  margin-bottom: 2%;
+  text-transform: uppercase; }
 
 .alignL, .alignR {
   float: left; }

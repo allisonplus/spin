@@ -63,11 +63,14 @@
 
   	<?php endwhile; // End the loop. Whew. ?>
 
-		<?php // Display navigation to next/previous pages when applicable ?>
-		<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-		  <p class="alignleft"><?php next_posts_link("&laquo; Older Entries"); ?></p>
-		  <p class="alignright"><?php previous_posts_link("Newer Entries &raquo;"); ?></p>
-		<?php endif; ?>
+  	<div class="clearfix post-navigation">
+
+			<?php // Display navigation to next/previous pages when applicable ?>
+			<?php if (  $wp_query->max_num_pages > 1 ) : ?>
+			  <p class="nav-previous"><?php next_posts_link("&laquo; Older Entries"); ?></p>
+			  <p class="nav-next"><?php previous_posts_link("Newer Entries &raquo;"); ?></p>
+			<?php endif; ?>
+		</div> <!--/.post-navigation-->
   		
     </div> <!--/.bp-content -->
 

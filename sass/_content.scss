@@ -125,6 +125,7 @@ span.entry-date p {
   background:#f3f3f3;
   border-right:3px solid #FFF;
   margin-bottom:2%;
+  text-transform: uppercase;
 }
 
 .alignL, .alignR {
@@ -155,6 +156,7 @@ span.entry-date p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   &:hover {
     background:#b2b2b2;
     color:#FFF;
