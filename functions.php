@@ -253,6 +253,7 @@ function hackeryou_posted_in() {
 }
 endif;
 
+
 /* Get rid of junk! - Gets rid of all the crap in the header that you dont need */
 
 function clean_shit_up() {

@@ -24,6 +24,12 @@
 			$thumb_url = $thumb_url_array[0];
 		?>
 
+		<?php if ( has_post_thumbnail() ) : ?>
+
+		<div class="entry-thumbnail">
+		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+		</div>
+
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<div class="clearfix photo-highlighted" style="background-image:url(<?= $thumb_url ?>)">
