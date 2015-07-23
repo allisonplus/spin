@@ -116,6 +116,9 @@
   .bp-thumbnail-header p {
   	line-height:1.4;
   }
+  .sidebar ul li {
+  	width:100%;
+  }
 }
 
 @media (max-width:740px) {
@@ -454,8 +457,11 @@
 			text-align:justify;
 		}
 	}
+	footer {
+		padding-top:7%;
+	}
 	ul.social {
-		margin-top:3%;
+		margin-top:5%;
 	}
 
 	.gallery-item img.attachment-one-hundred {
