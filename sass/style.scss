@@ -102,16 +102,28 @@ pre {
                    Sidebar
    =========================================== */
 .sidebar {
-  width:30%;
-  float:left;
+  width:80%;
+  // float:left;
+  margin:3% auto;
+  display:block;
 }
   .sidebar ul {
     margin:0;
     padding:0;
   }
     .sidebar ul li {
+      float:left;
+      display:inline-block;
       list-style: none;
+      width:50%;
     }
+
+li#text3 {
+  width:35%;
+  display:inline-block;
+  float:left;
+}
+
 
 /* ================================================
                    Footer

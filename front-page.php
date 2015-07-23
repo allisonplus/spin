@@ -59,7 +59,12 @@
 
     </div> <!--/.mainContent -->
 
-    <div class="secondContent">
+    <div class="secondContent clearfix">
+    	<div class="container">
+
+    	<?php get_sidebar(); ?>
+
+    	</div> <!--/.container-->
     </div> <!--/secondContent-->
 
   </div> <!-- /.container -->

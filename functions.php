@@ -142,7 +142,7 @@ add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
 
 
 /*
- * Sets the post excerpt length to 40 characters.
+ * Sets the post excerpt length to 35 characters.
  */
 function hackeryou_excerpt_length( $length ) {
 	return 35;
