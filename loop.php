@@ -59,6 +59,7 @@
 		</article><!-- #post-## -->
 
 		<?php comments_template( '', true ); ?>
+		
 <?php endwhile; // End the loop. Whew. ?>
 
 </section> <!--/.loop section-->

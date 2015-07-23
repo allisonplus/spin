@@ -517,6 +517,11 @@ a.readMore {
     color: #FFF;
     transition: 0.2s; }
 
+.secondContent p {
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 2%; }
+
 article {
   position: relative;
   overflow: hidden;
