@@ -62,6 +62,11 @@
     <div class="secondContent clearfix">
     	<div class="container">
 
+    	<p>Hey. Welcome. You made it. I’m glad you’re here. This is the space I've created for the stories in my life. Some true and some less true. (I'll try to let you know which is which.) I write about travel, mental health, code -- about books, feminism and pop culture. The moments and events that bring me joy.</p>
+    	<!-- <blockquote>“She seems to have had the ability to stand firmly on the rock of her past while living completely and unregretfully in the present.”</blockquote>
+    	<cite>― Madeleine L'Engle</cite> -->
+    	<p>Are you new here? If so, you might want to read a little <a href="<?php bloginfo('url'); ?>/about">about me</a>.</p>
+
     	<?php get_sidebar(); ?>
 
     	</div> <!--/.container-->
