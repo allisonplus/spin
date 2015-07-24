@@ -18,48 +18,54 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-		<?php 
-			$thumb_id = get_post_thumbnail_id();
-			$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'highlighted', true);
-			$thumb_url = $thumb_url_array[0];
-		?>
-
-		<?php if ( has_post_thumbnail() ) : ?>
-
-		<div class="entry-thumbnail">
-		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-		</div>
+	<?php 
+		$thumb_id = get_post_thumbnail_id();
+		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'highlighted', true);
+		$thumb_url = $thumb_url_array[0];
+	?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<div class="clearfix photo-highlighted" style="background-image:url(<?= $thumb_url ?>)">
-			</div> <!--/photo-highlighted-->
+				<div class="clearfix photo-highlighted" style="background-image:url(<?= $thumb_url ?>)">
+				</div> <!--/photo-highlighted-->
 
-			<a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>
-			
-			<div class="thumbnail-header">
-				<div class="meta-data">
-					<span class="entry-cat" id="entry-cat">
-						<?php 
-						$category = get_the_category(); 
-						if($category[0]){
-						echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
-						} ?>
-					</span>
-					<span class="entry-date"><i class="fa fa-clock-o"></i><?php the_date('F jS, Y', '<p>', '</p>'); ?></span>
+				<a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>
+				
+				<div class="thumbnail-header">
+					<div class="meta-data">
+						<span class="entry-cat" id="entry-cat">
+							<?php 
+							$category = get_the_category(); 
+							if($category[0]){
+							echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
+							} ?>
+						</span>
+						<span class="entry-date"><i class="fa fa-clock-o"></i><?php the_date('F jS, Y', '<p>', '</p>'); ?></span>
 
-				</div> <!--/.meta-data-->
-	      <h2 class="entry-title">
-	        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-	          <?php the_title(); ?>
-	        </a>
-	      </h2>
-	    </div> <!--/.thumbnail-header-->
+					</div> <!--/.meta-data-->
+		      <h2 class="entry-title">
+		        <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
+		          <?php the_title(); ?>
+		        </a>
+		      </h2>
+		    </div> <!--/.thumbnail-header-->
+
+			<section class="entry-content">
+				<?php the_excerpt(); ?>
+
+				<?php wp_link_pages( array(
+          'before' => '<div class="page-link"> Pages:',
+          'after' => '</div>'
+        )); ?>
+			</section><!-- .entry-content -->
+
+			<footer></footer>
 
 		</article><!-- #post-## -->
 
 		<?php comments_template( '', true ); ?>
-		
+
+
 <?php endwhile; // End the loop. Whew. ?>
 
 </section> <!--/.loop section-->
