@@ -55,15 +55,42 @@ p {
   line-height: 1.5;
 }
 
-/*blockquotes*/
+/*==blockquotes==*/
 blockquote {
-  background: #F7F7F7;
+  // background: #F7F7F7;
   margin:0;
-  padding:20px;
-}
-  blockquote p {
-    margin-top: 0;
+  margin-top:4%;
+  position: relative;
+  padding: 0 50px;
+  p {
+    margin-top:0;
   }
+}
+
+blockquote:before,
+blockquote:after {
+  position: absolute; 
+  font-size: 85px;
+  color:$primary;
+}
+blockquote:before {
+  content:"\201C"; 
+  left: 0; 
+  top: -30px;
+}
+
+blockquote:after {
+  content:"\201D"; 
+  right: 0; 
+  bottom: -65px;
+}
+
+span {
+  // Places em dash
+  &::before {
+    content: "\2014\2002";
+  }
+}
 
 /*tables*/
 table td {

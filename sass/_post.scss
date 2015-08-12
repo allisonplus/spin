@@ -104,6 +104,10 @@ h2.hero-title {
 
 //if one portrait photo on its own, center it rather than float
 
+img.alignnone.size-fiftyV:nth-last-child(-n+2):first-child img.alignnone.size-fiftyV:nth-last-child(-n+2):first-child ~ img.alignnone.size-fiftyV {
+  border:5px solid purple;
+}
+
 // .page-content > img.alignnone.size-fiftyV {
 //   float: none;
 //   display: block;
