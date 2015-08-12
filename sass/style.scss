@@ -85,12 +85,12 @@ blockquote:after {
   bottom: -65px;
 }
 
-span {
-  // Places em dash
-  &::before {
-    content: "\2014\2002";
-  }
-}
+// span {
+//   // Places em dash
+//   &::before {
+//     content: "\2014\2002";
+//   }
+// }
 
 /*tables*/
 table td {

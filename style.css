@@ -745,9 +745,6 @@ blockquote:after {
   right: 0;
   bottom: -65px; }
 
-span::before {
-  content: "\2014\2002"; }
-
 /*tables*/
 table td {
   padding: 10px; }
