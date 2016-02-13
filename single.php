@@ -6,7 +6,7 @@
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-          <?php 
+          <?php
             $thumb_id = get_post_thumbnail_id();
             $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'blog-pull', true);
             $thumb_url = $thumb_url_array[0];
@@ -14,16 +14,16 @@
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
           <div class="hero" id="hero">
-            <div class="hero-image clearfix">
-            </div> <!--/hero-image-->
+           <!--  <div class="hero-image clearfix">
+            </div> --> <!--/hero-image-->
 
             <a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>
-            
+
             <div class="hero-content">
               <div class="hero-meta">
                 <span class="entry-cat" id="entry-cat">
-                  <?php 
-                  $category = get_the_category(); 
+                  <?php
+                  $category = get_the_category();
                   if($category[0]){
                   echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
                   } ?>
@@ -55,9 +55,9 @@
           <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
         </div><!--/.post-navigation -->
 
-        <div class="comments"> 
+        <div class="comments">
           <?php get_comments( $args ); ?>
-          <?php comments_template(); ?> 
+          <?php comments_template(); ?>
         </div>
 
       <?php endwhile; // end of the loop. ?>
