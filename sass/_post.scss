@@ -7,11 +7,13 @@
 // Single Post Hero Image
 
 .hero {
-  // height:220px;
-  // padding-bottom:40px;
-  margin-bottom:35px;
+  margin-bottom:0;
   position:relative;
   width:100%;
+
+  @media (min-width:700px) {
+    margin-bottom:35px;
+  }
 }
 
 .hero-image {
@@ -53,7 +55,6 @@ h2.hero-title {
 }
 
 .hero-data {
-  color:#FFF;
   font-size:14px;
   font-weight:700;
   letter-spacing:1.2px;
@@ -64,12 +65,7 @@ h2.hero-title {
 
 .hero-meta {
   margin-bottom:15px;
-  margin-left:10px;
   transform:skew(-20deg);
-
-  span.entry-date {
-    color:#FFF;
-  }
 }
 
 // Single Post - Actual Content
@@ -79,9 +75,9 @@ h2.hero-title {
 }
 
 .page-content {
-  font-size:18px;
-  margin:0 auto;
-  max-width: 900px;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 900px;
 }
 
 // Images within Single Post
@@ -92,51 +88,6 @@ h2.hero-title {
   float:left;
   height:auto;
   max-width:100%;
-}
-
-.page-content img.alignnone.size-fiftyV {
-  display:inline-block;
-  float:left;
-  margin-bottom:20px;
-  margin-right:5px;
-
-  &:last-child {
-    margin-right:0;
-  }
-}
-
-//if one portrait photo on its own, center it rather than float
-
-img.alignnone.size-fiftyV:nth-last-child(-n+2):first-child img.alignnone.size-fiftyV:nth-last-child(-n+2):first-child ~ img.alignnone.size-fiftyV {
-  border:5px solid purple;
-}
-
-// .page-content > img.alignnone.size-fiftyV {
-//   float: none;
-//   display: block;
-//   margin: 0 auto;
-// }
-
-// .gallery-item:only-of-type img.attachment-fiftyV {
-//   display:block;
-//   margin:0 auto;
-//   float:none;
-// }
-
-.page-content img.alignnone.size-fifty {
-  margin-right:5px;
-
-  &:last-child {
-    margin-right:0;
-  }
-}
-
-.page-content img.alignnone.size-thirty-three {
-  margin-right:5px;
-
-  &:last-child {
-    margin-right:0;
-  }
 }
 
 // Single Post Tags List
