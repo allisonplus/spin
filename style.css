@@ -246,14 +246,14 @@ h2.hero-title {
   color: #FFF;
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
   transform: skew(-20deg);
   webkit-transform: skew(-20deg); }
 
 .hero-meta {
-  margin-left: 10px;
   margin-bottom: 15px;
+  margin-left: 10px;
   transform: skew(-20deg); }
   .hero-meta span.entry-date {
     color: #FFF; }
@@ -263,15 +263,15 @@ h2.hero-title {
 
 .page-content {
   font-size: 18px;
-  max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 900px; }
 
 .page-content img.alignnone.size-one-hundred,
 .page-content img.alignnone.size-fifty,
 .page-content img.alignnone.size-thirty-three {
-  max-width: 100%;
+  float: left;
   height: auto;
-  float: left; }
+  max-width: 100%; }
 
 .page-content img.alignnone.size-fiftyV {
   display: inline-block;
