@@ -19,10 +19,16 @@ function theme_setup() {
 
 	// Adds image sizes to actual WordPress Media Gallery
 	if ( function_exists( 'add_image_size' ) ) {
-	add_image_size( 'one-hundred', 1100, 734, true ); //(full image)
-	add_image_size( 'fifty', 545, 346, true ); //(two images - horizontal)
-	add_image_size( 'fiftyV', 545, 818, true ); //(two images - vertical)
-	add_image_size( 'thirty-three', 360, 228, true ); //(three images)
+	add_image_size( 'one-hundred', 900, 601, true ); //(full image)
+	add_image_size( 'fifty', 450, 301, true ); //(two images - horizontal)
+	add_image_size( 'fiftyV', 273, 410, true ); //(two images - vertical)
+	add_image_size( 'thirty-three', 300, 200, true ); //(three images)
+
+
+	// add_image_size( 'one-hundred', 1100, 734, true ); //(full image)
+	// add_image_size( 'fifty', 545, 346, true ); //(two images - horizontal)
+	// add_image_size( 'fiftyV', 545, 818, true ); //(two images - vertical)
+	// add_image_size( 'thirty-three', 360, 228, true ); //(three images)
 	}
 	add_filter('image_size_names_choose', 'my_image_sizes');
 	function my_image_sizes($sizes) {
@@ -35,7 +41,7 @@ function theme_setup() {
 	$newsizes = array_merge($sizes, $addsizes);
 	return $newsizes;
 	}
-	
+
 	// function to set default image link to none
 	update_option('image_default_link_type','none');
 
