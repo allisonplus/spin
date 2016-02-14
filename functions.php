@@ -16,7 +16,7 @@ function theme_setup() {
 
 	// Adds image sizes to actual WordPress Media Gallery
 	if ( function_exists( 'add_image_size' ) ) {
-	add_image_size( 'one-hundred', 800, 601, true ); //(full image)
+	add_image_size( 'one-hundred', 800, 481, true ); //(full image)
 	add_image_size( 'fifty', 400, 267, true ); //(two landscape images)
 	add_image_size( 'fiftyV', 400, 601, true ); //(vertical portrait)
 	add_image_size( 'thirty-three', 200, 134, true ); //(three images)
