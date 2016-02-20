@@ -7,15 +7,15 @@
 
     <div class="content clearfix">
   		<?php $mainQuery = new WP_Query(
-    		array( 
+    		array(
     				'posts_per_page' => 3,
-    				) 
+    				)
   		); ?>
 
   		<?php if ( $mainQuery->have_posts() ) : ?>
 
   			<?php while ( $mainQuery->have_posts() ) : $mainQuery->the_post(); ?>
-  				<?php 
+  				<?php
 						$thumb_id = get_post_thumbnail_id();
 						$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'highlighted', true);
 						$thumb_url = $thumb_url_array[0];
@@ -28,12 +28,12 @@
 				</div> <!--/photo-highlighted-->
 
 				<a class="post-link" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark"></a>
-				
+
 				<div class="thumbnail-header">
 					<div class="meta-data">
 						<span class="entry-cat" id="entry-cat">
-							<?php 
-							$category = get_the_category(); 
+							<?php
+							$category = get_the_category();
 							if($category[0]){
 							echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
 							} ?>
@@ -54,7 +54,7 @@
   				<?php wp_reset_postdata(); ?>
 
   		<?php else:  ?>
-  			
+
   		<?php endif; ?>
 
     </div> <!--/.mainContent -->
@@ -62,11 +62,9 @@
     <div class="secondContent clearfix">
     	<div class="container">
 
-    	<p>Hey. You made it.</p>
-    	<p>I’m glad you’re here. This is the space I've created for the stories in my life. Some true and some less true. (I'll try to let you know which is which.) I write about travel, mental health, code -- about books, feminism and pop culture. The moments and events that bring me joy.</p>
-    	<!-- <blockquote>“She seems to have had the ability to stand firmly on the rock of her past while living completely and unregretfully in the present.”</blockquote>
-    	<cite>― Madeleine L'Engle</cite> -->
-    	<!-- <p>Are you new here? If so, you might want to read a little <a href="<?php bloginfo('url'); ?>/about">about me</a>.</p> -->
+      <p><?php esc_html_e('Hey. You made it.') ?></p>
+
+    	<p><?php esc_html_e('I’m glad you’re here. This is the space I\'ve created for the stories in my life. Some true and some less true. (I\'ll try to let you know which is which.) I write about travel, mental health, code -- about books, feminism and pop culture. The moments and events that bring me joy.') ?></p>
 
     	<?php get_sidebar(); ?>
 
