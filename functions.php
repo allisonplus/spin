@@ -97,9 +97,26 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
+
+
+// Register & Enqueue Styles
+function spin_styles() {
+
+	wp_register_style( 'spin', get_stylesheet_uri(), false, false );
+	wp_enqueue_style( 'spin' );
+
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700,400italic');
+	wp_enqueue_style( 'googleFonts');
+
+	wp_register_style('fontAwesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+	wp_enqueue_style( 'fontAwesome');
+
+}
+add_action( 'wp_enqueue_scripts', 'spin_styles' );
 
 
 /* Custom Title Tags */
