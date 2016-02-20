@@ -1,7 +1,7 @@
 // Single Post Container
 .hero-content, .comments, ul.tags {
-  width:900px;
-  margin:0 auto;
+  margin: 0 auto;
+  width: 900px;
 }
 
 // Single Post Hero Image
@@ -29,14 +29,14 @@
 // Single Post Hero Header Data
 
 h2.hero-title {
-  font-size:55px;
+  font-size:40px;
   margin:0;
 
   a {
     color: #090038;
-    line-height:45px;
     font-weight:400;
     letter-spacing:1.2px;
+    line-height:45px;
   }
 }
 
@@ -134,8 +134,8 @@ ul.tags {
 
 .nav-previous a, .nav-next a {
   color:#505050;
-  text-transform:uppercase;
   letter-spacing:1.2px;
+  text-transform:uppercase;
 }
 
 .nav-previous {
