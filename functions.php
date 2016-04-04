@@ -16,19 +16,19 @@ function theme_setup() {
 
 	// Adds image sizes to actual WordPress Media Gallery
 	if ( function_exists( 'add_image_size' ) ) {
-	add_image_size( 'one-hundred', 800, 481, true ); //(full image)
-	add_image_size( 'fifty', 400, 267, true ); //(two landscape images)
-	add_image_size( 'fiftyV', 400, 601, true ); //(vertical portrait)
-	add_image_size( 'thirty-three', 200, 134, true ); //(three images)
+		add_image_size( 'one-hundred', 800, 481, true ); //(full image)
+		add_image_size( 'fifty', 400, 267, true ); //(two landscape images)
+		add_image_size( 'fiftyV', 400, 601, true ); //(vertical portrait)
+		add_image_size( 'thirty-three', 200, 134, true ); //(three images)
 	}
 	add_filter('image_size_names_choose', 'my_image_sizes');
 
 	function my_image_sizes($sizes) {
 		$addsizes = array(
-			"one-hundred" => __( "One Hundred"),
-			"fifty" => __( "Fifty"),
-			"fiftyV" => __( "Fifty Vertical"),
-			"thirty-three" => __( "Thirty-Three"),
+			"one-hundred" => __( "One Hundred", 'spin'),
+			"fifty" => __( "Fifty", 'spin'),
+			"fiftyV" => __( "Fifty Vertical", 'spin'),
+			"thirty-three" => __( "Thirty-Three", 'spin'),
 		);
 	$newsizes = array_merge($sizes, $addsizes);
 	return $newsizes;
@@ -310,3 +310,8 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+/**
+ * Custom template tags for this theme.
+ */
+require get_template_directory() . '/inc/template-tags.php';
