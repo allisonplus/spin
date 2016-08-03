@@ -69,19 +69,19 @@ blockquote {
 
 blockquote:before,
 blockquote:after {
-  position: absolute; 
+  position: absolute;
   font-size: 85px;
   color:$primary;
 }
 blockquote:before {
-  content:"\201C"; 
-  left: 0; 
+  content:"\201C";
+  left: 0;
   top: -30px;
 }
 
 blockquote:after {
-  content:"\201D"; 
-  right: 0; 
+  content:"\201D";
+  right: 0;
   bottom: -65px;
 }
 
@@ -128,19 +128,21 @@ pre {
                    Sidebar
    =========================================== */
 .sidebar {
-  width:80%;
-  margin:3% auto;
-  display:block;
+  display: block;
+  margin: 3% auto;
+  width: 80%;
 }
   .sidebar ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    max-height: 200px;
   }
     .sidebar ul li {
+      display: inline-block;
       float:left;
-      display:inline-block;
       list-style: none;
-      width:50%;
+      width: 50%;
     }
 
 
